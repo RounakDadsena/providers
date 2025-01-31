@@ -9,6 +9,7 @@ const providers = [
   {
     id: 'autoembed-english',
     rank: 9,
+    disabled: true,
   },
   {
     id: 'autoembed-tamil',
