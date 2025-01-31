@@ -3,13 +3,12 @@ import { makeEmbed } from '@/providers/base';
 
 const providers = [
   {
-    id: 'autoembed-english',
-    rank: 10,
+    id: 'autoembed-hindi',
+    rank: 10, // Updated rank to make it higher priority than English
   },
   {
-    id: 'autoembed-hindi',
+    id: 'autoembed-english',
     rank: 9,
-    disabled: true,
   },
   {
     id: 'autoembed-tamil',
@@ -54,8 +53,8 @@ function embed(provider: { id: string; rank: number; disabled?: boolean }) {
 }
 
 export const [
-  autoembedEnglishScraper,
   autoembedHindiScraper,
+  autoembedEnglishScraper,
   autoembedBengaliScraper,
   autoembedTamilScraper,
   autoembedTeluguScraper,
